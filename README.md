@@ -30,7 +30,7 @@ Many thanks to [rayhaanj](https://github.com/rayhaanj), [Mechazawa](https://gith
 ### Screenshot
 
 <p align="center">
-  <img src="https://github.com/sskrishna/2048/blob/master/images/screenshot_of_game.png" alt="Screenshot"/>
+  <img src="https://github.com/sskrishna/2048/blob/master/images/screenshot_of_image.png" alt="Screenshot"/>
 </p>
 
 That screenshot is fake, by the way. I never reached 2048 :smile:
