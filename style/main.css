@@ -224,6 +224,10 @@ hr {
   .grid-cell:last-child {
     margin-right: 0; }
 
+.grid-cell-image {
+  width: 106.25px;
+  height: 106.25px;}
+
 .tile-container {
   position: absolute;
   z-index: 2; }

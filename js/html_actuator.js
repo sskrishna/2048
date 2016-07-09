@@ -59,10 +59,54 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   if (tile.value > 2048) classes.push("tile-super");
 
-  this.applyClasses(wrapper, classes);
+  this.applyClasses(wrapper, classes);  
+
+  var tile_image = document.createElement("img");
+  //var style = getComputedStyle(document.querySelector(".grid-cell")
+  //tile_image.setAttribute("style", "height: " + style.height + "width: " + style.width)
+  tile_image.setAttribute("class", "grid-cell-image");
+  
+  if (tile.value === 2) {
+    tile_image.setAttribute("src", "images/2.jpg");
+  }
+  else if (tile.value === 4) {
+    tile_image.setAttribute("src", "images/4.jpg");
+  }
+  else if (tile.value === 8) {
+    tile_image.setAttribute("src", "images/8.jpg");
+  }
+  else if (tile.value === 16) {
+    tile_image.setAttribute("src", "images/16.jpg");
+  }
+  else if (tile.value === 32) {
+    tile_image.setAttribute("src", "images/32.jpg");
+  }
+  else if (tile.value === 64) {
+    tile_image.setAttribute("src", "images/64.jpg");
+  }
+  else if (tile.value === 128) {
+    tile_image.setAttribute("src", "images/128.jpg");
+  }
+  else if (tile.value === 512) {
+    tile_image.setAttribute("src", "images/512.jpg");
+  }
+  else if (tile.value === 1024) {
+    tile_image.setAttribute("src", "images/1024.jpg");
+  }
+  else {
+    tile_image.setAttribute("src", "images/2048.jpg");
+  }
+  //tile_image.src = "../images/2.jpg";
+  //document.getElementById("tile_image").src = "../images/2.jpg";
+  inner.appendChild(tile_image);
+
+  //var src = document.getElementById("header")
+  //src.appendChild(tile_image)
+
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  //inner.textContent = tile.value;
+  //inner.textContent = tile_image;
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
